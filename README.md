@@ -14,10 +14,11 @@ A Flask-based web application for parsing resumes and extracting key information
 
 - Python 3.8+
 - Flask
-- spaCy
+- python-dotenv
 - python-docx
 - PyPDF2
-- SQLite
+- Werkzeug
+- google-api-python-client
 
 Install dependencies:
 ```sh
@@ -51,8 +52,8 @@ resume_parser/
 
 ## How It Works
 
-- The app uses spaCy for advanced name/entity detection.
-- Uploaded resumes are parsed for key information using regular expressions and NLP.
+- The app uses LLM for advanced name/entity detection.
+- Uploaded resumes are parsed for key information using GoogleAPI.
 - Parsed data is saved to a database and displayed in the web interface.
 
 ## Improving Name Detection
@@ -67,4 +68,4 @@ MIT License
 
 
 sagun meena
-- [GitHub Repository](https://github.com/CaptJack05/resumeParser)
+- [GitHub Repository](https://github.com/sagun0608/ResumeParser_new)
